@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Online Casino</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎰 Fun Fake Casino 🎰</h1>
+  <div class="balance">Balance: <span id="balance">0</span> coins</div>
+
+  <div class="section">
+    <h2>🪙 Coin Flip</h2>
+    <button onclick="coinFlip('heads')">Bet on Heads</button>
+    <button onclick="coinFlip('tails')">Bet on Tails</button>
+    <div id="coinResult" class="result"></div>
+  </div>
+
+  <div class="section">
+    <h2>🎲 Dice Roll</h2>
+    <button onclick="rollDice()">Roll Dice (Win if 4-6)</button>
+    <div id="diceResult" class="result"></div>
+  </div>
+
+  <div class="section">
+    <h2>💼 Case Battle</h2>
+    <button onclick="openCase()">Open Case (200 coins)</button>
+    <div id="caseResult" class="result"></div>
+  </div>
+
+  <div class="section">
+    <h2>🎰 Slot Machine</h2>
+    <div class="slots" id="slotDisplay">🍒 🍋 🍒</div>
+    <button onclick="playSlots()">Spin (150 coins)</button>
+    <div id="slotResult" class="result"></div>
+  </div>
+
+  <div class="section">
+    <h2>🃏 Blackjack</h2>
+    <div>
+      <button onclick="startBlackjack()">Start Game (200 coins)</button>
+      <button onclick="hit()">Hit</button>
+      <button onclick="stand()">Stand</button>
+    </div>
+    <div id="blackjackStatus" class="result"></div>
+    <div id="blackjackCards" class="result"></div>
+  </div>
+
+  <button onclick="resetBalance()">🔄 Reset Balance</button>
+
+  <script src="casino.js"></script>
+</body>
+</html>
